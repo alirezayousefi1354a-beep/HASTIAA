@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        انگشتر و گوشواره مرواریدی استیل | HASTIA
+    </title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            background: #f8f5f0;
+            color: #2f2f2f;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .product {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 22px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+
+        .back {
+            display: block;
+            margin-bottom: 25px;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            display: block;
+            margin: auto;
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: 25px;
+        }
+
+        .description {
+            line-height: 2;
+            color: #666;
+            font-size: 15px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+
+        button {
+            background: #2f2f2f;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="product">
+
+        <a class="back" href="index.html">
+            ← بازگشت به فروشگاه
+        </a>
+
+
+        <img
+            src="product13.png"
+            alt="انگشتر و گوشواره مرواریدی استیل"
+            class="product-image"
+        >
+
+
+        <h1>
+            انگشتر و گوشواره مرواریدی استیل
+        </h1>
+
+
+        <p class="description">
+            ست انگشتر و گوشواره مرواریدی استیل،
+            ظریف و شیک برای استایل‌های خاص و مینیمال HASTIA.
+        </p>
+
+
+        <div class="price">
+            700000 تومان
+        </div>
+
+
+      <button id="addButton">
+    افزودن به سبد خرید 🛒
+</button>
+
+    </div>
+
+
+<script>
+document.getElementById("addButton").onclick = function () {
+
+    window.location.href =
+        "cart.html?name=" +
+        encodeURIComponent("انگشتر و گوشواره مرواریدی استیل") +
+        "&price=700000";
+
+};
+</script>

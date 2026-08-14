@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ثبت سفارش | HASTIA</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f6efe6;
+    font-family: Arial, sans-serif;
+    color: #29231f;
+    direction: rtl;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.box {
+    background: #fffdf9;
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(80,60,40,.12);
+}
+
+.brand {
+    direction: ltr;
+    font-size: 34px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.check {
+    font-size: 55px;
+    color: #8b684d;
+}
+
+h1 {
+    margin: 15px 0 10px;
+}
+
+p {
+    color: #817469;
+    line-height: 1.9;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    background: #29231f;
+    color: white;
+}
+
+.admin {
+    background: #8b684d;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="box">
+
+        <div class="brand">
+            HASTIA
+        </div>
+
+        <div class="check">
+            ✓
+        </div>
+
+        <h1>
+            سفارش شما ثبت شد
+        </h1>
+
+        <p>
+            ممنون که HASTIA را انتخاب کردید.
+            <br>
+            سفارش شما با موفقیت ثبت شد.
+        </p>
+
+        <a href="index.html">
+            بازگشت به صفحه اصلی
+        </a>
+
+        <a class="admin" id="adminLink" href="#">
+            مدیریت سفارش‌ها
+        </a>
+
+    </div>
+
+</div>
+
+
+<script>
+
+var params = new URLSearchParams(window.location.search);
+
+var name = params.get("name") || "";
+var phone = params.get("phone") || "";
+var address = params.get("address") || "";
+var product = params.get("product") || "محصول HASTIA";
+var date = params.get("date") || "";
+
+
+/* اگر زمان وجود نداشت */
+if (!date) {
+    date = new Date().toLocaleString("fa-IR");
+}
+
+
+/* ساخت لینک مدیریت سفارش */
+var adminURL =
+    "admin.html" +
+    "?name=" + encodeURIComponent(name) +
+    "&phone=" + encodeURIComponent(phone) +
+    "&address=" + encodeURIComponent(address) +
+    "&product=" + encodeURIComponent(product) +
+    "&date=" + encodeURIComponent(date);
+
+
+/* وصل کردن دکمه */
+document.getElementById("adminLink").href = adminURL;
+
+</script>
+
+</body>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>گردنبند قلب مینیمال | HASTIA</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            background: #f8f5f0;
+            color: #2f2f2f;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        nav {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #2f2f2f;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .product {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 22px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            object-fit: contain;
+            border-radius: 18px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .description {
+            color: #777;
+            line-height: 2;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        button {
+            background: #2f2f2f;
+            color: white;
+            border: none;
+            padding: 13px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">خانه</a>
+    <a href="products.html">محصولات</a>
+    <a href="cart.html">سبد خرید</a>
+</nav>
+
+<div class="product">
+
+    <img
+        src="./product7.png"
+        alt="گردنبند قلب مینیمال"
+    >
+
+    <h1>
+        گردنبند قلب مینیمال
+    </h1>
+
+    <p class="description">
+        گردنبند قلب مینیمال و ظریف HASTIA
+    </p>
+
+    <p class="price">
+        ۴۰۰٬۰۰۰ تومان
+    </p>
+
+  <button id="addButton">
+    افزودن به سبد خرید 🛒
+</button>
+
+</div>
+
+<script>
+document.getElementById("addButton").onclick = function () {
+
+    window.location.href =
+        "cart.html?name=" +
+        encodeURIComponent("گردنبند قلب مینیمال") +
+        "&price=400000";
+
+};
+</script>
+
+</body>
+
+</html>

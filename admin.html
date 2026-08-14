@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مدیریت سفارش | HASTIA</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6efe6;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    color: #29231f;
+}
+
+.container {
+    max-width: 700px;
+    margin: 45px auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand {
+    direction: ltr;
+    font-size: 35px;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+.header p {
+    color: #8b7b6d;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background: #967154;
+    margin: 12px auto;
+    border-radius: 10px;
+}
+
+.card {
+    background: #fffdf9;
+    padding: 28px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(80,60,40,.12);
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.info {
+    background: #f8f2eb;
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+}
+
+.label {
+    display: block;
+    color: #927b69;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.value {
+    font-size: 16px;
+    line-height: 1.8;
+    word-break: break-word;
+}
+
+.status {
+    margin-top: 22px;
+    background: #eee3d7;
+    padding: 20px;
+    border-radius: 17px;
+}
+
+select {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    border: 1px solid #d7c9bb;
+    border-radius: 11px;
+    background: white;
+    font-family: inherit;
+}
+
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px;
+    border: none;
+    border-radius: 11px;
+    background: #29231f;
+    color: white;
+    font-family: inherit;
+}
+
+.message {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    color: #6f5e4f;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="brand">HASTIA</div>
+
+        <div class="line"></div>
+
+        <p>مدیریت سفارش‌ها</p>
+
+    </div>
+
+
+    <div class="card">
+
+        <div class="title">
+            🛍️ سفارش جدید
+        </div>
+
+
+        <div class="info">
+            <span class="label">نام مشتری</span>
+            <div class="value" id="name"></div>
+        </div>
+
+
+        <div class="info">
+            <span class="label">شماره تماس</span>
+            <div class="value" id="phone" dir="ltr"></div>
+        </div>
+
+
+        <div class="info">
+            <span class="label">آدرس</span>
+            <div class="value" id="address"></div>
+        </div>
+
+
+        <div class="info">
+            <span class="label">محصول</span>
+            <div class="value" id="product"></div>
+        </div>
+
+
+        <div class="info">
+            <span class="label">تاریخ و ساعت</span>
+            <div class="value" id="date"></div>
+        </div>
+
+
+        <div class="status">
+
+            <b>وضعیت سفارش</b>
+
+            <select id="status">
+
+                <option>در انتظار بررسی</option>
+                <option>در حال آماده‌سازی</option>
+                <option>آماده ارسال</option>
+                <option>ارسال شد</option>
+                <option>تکمیل شد</option>
+
+            </select>
+
+            <button onclick="saveStatus()">
+                ذخیره وضعیت
+            </button>
+
+            <div class="message" id="message">
+                ✓ وضعیت ذخیره شد
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div style="
+    text-align:center;
+    margin:50px auto 20px;
+    padding:35px 20px;
+    max-width:600px;
+    background:#fff;
+    border-radius:22px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+    line-height:2.2;
+">
+
+    <h2 style="
+        font-family:Georgia,serif;
+        font-size:25px;
+        margin-bottom:18px;
+    ">
+        ممنون که HASTIA رو انتخاب کردی 🤍
+    </h2>
+
+    <p style="
+        font-size:16px;
+        color:#666;
+    ">
+        هر اکسسوری، یه تکه کوچیک از زیبایی توئه؛
+        <br>
+        و ما خوشحالیم که بخشی از استایلت شدیم. ✨
+        <br><br>
+        حالا منتظر عکسای قشنگت با HASTIA هستیم...
+        <br>
+        <strong>عکسای قشنگت رو برامون بفرست 📸🤍</strong>
+        <br><br>
+        با عشق،
+        <br>
+        <strong>HASTIA</strong>
+    </p>
+
+</div>
+
+
+<script>
+
+var params = new URLSearchParams(window.location.search);
+
+var name =
+    params.get("name") || "ثبت نشده";
+
+var phone =
+    params.get("phone") || "ثبت نشده";
+
+var address =
+    params.get("address") || "ثبت نشده";
+
+var product =
+    params.get("product") || "محصول HASTIA";
+
+var date =
+    params.get("date") || "ثبت نشده";
+
+
+/* =========================
+   نمایش اطلاعات مشتری
+========================= */
+
+var nameElement =
+    document.getElementById("name");
+
+var phoneElement =
+    document.getElementById("phone");
+
+var addressElement =
+    document.getElementById("address");
+
+var productElement =
+    document.getElementById("product");
+
+var dateElement =
+    document.getElementById("date");
+
+
+if (nameElement) {
+    nameElement.innerText = name;
+}
+
+if (phoneElement) {
+    phoneElement.innerText = phone;
+}
+
+if (addressElement) {
+    addressElement.innerText = address;
+}
+
+if (productElement) {
+    productElement.innerText = product;
+}
+
+if (dateElement) {
+    dateElement.innerText = date;
+}
+
+
+/* =========================
+   وضعیت سفارش
+========================= */
+
+var statusElement =
+    document.getElementById("status");
+
+var oldStatus =
+    localStorage.getItem("hastiaOrderStatus");
+
+if (statusElement && oldStatus) {
+    statusElement.value = oldStatus;
+}
+
+
+/* =========================
+   ذخیره وضعیت
+========================= */
+
+function saveStatus() {
+
+    if (!statusElement) {
+        return;
+    }
+
+    localStorage.setItem(
+        "hastiaOrderStatus",
+        statusElement.value
+    );
+
+    var message =
+        document.getElementById("message");
+
+    if (message) {
+        message.style.display = "block";
+    }
+
+}
+
+</script>
