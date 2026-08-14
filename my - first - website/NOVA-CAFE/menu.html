@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA | Menu</title>
+<style>
+body {
+    background: #e8e1d5;
+    font-family: Arial, sans-serif;
+    color: #26382c;
+}
+
+.menu-page {
+    min-height: 100vh;
+    padding: 70px 6%;
+    background: #f7f3eb;
+}
+
+.menu-page-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.menu-page-heading p {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #7b806d;
+    margin-bottom: 12px;
+}
+
+.menu-page-heading h1 {
+    font-size: 46px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.menu-page-heading span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.menu-category {
+    max-width: 800px;
+    margin: 0 auto 55px;
+}
+
+.menu-category h2 {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #a08d6d;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    border-top: 1px solid #d8d0c1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+    border-bottom: 1px solid #d8d0c1;
+}
+
+.menu-item h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.menu-item p {
+    font-size: 12px;
+    color: #777;
+}
+
+.menu-item span {
+    font-size: 13px;
+    color: #a08d6d;
+    white-space: nowrap;
+}
+.menu-category {
+    background: #fbf8f2;
+    padding: 35px 40px;
+    border: 1px solid #ded6c8;
+    margin-bottom: 40px;
+}
+
+.menu-category h2 {
+    margin-top: 0;
+}
+@media (max-width: 700px) {
+
+    .menu-page {
+        padding: 55px 5%;
+    }
+
+    .menu-page-heading h1 {
+        font-size: 36px;
+    }
+
+    .menu-category {
+        padding: 25px 20px;
+        margin-bottom: 25px;
+    }
+
+    .menu-item {
+        padding: 18px 0;
+    }
+
+    .menu-item h3 {
+        font-size: 15px;
+    }
+
+    .menu-item p {
+        font-size: 11px;
+    }
+
+    .menu-item span {
+        font-size: 12px;
+    }
+
+}
+.back-home {
+    display: inline-block;
+    margin: 25px 6%;
+    color: #26382c;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #a08d6d;
+}
+.menu-page-heading,
+.menu-category {
+    animation: fadeUp 0.7s ease both;
+}
+
+.menu-category:nth-of-type(3) {
+    animation-delay: 0.1s;
+}
+
+.menu-category:nth-of-type(4) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <a href="index.html" class="back-home">
+    ← BACK TO NOVA
+</a>
+<section class="menu-page">
+
+    <div class="menu-page-heading">
+
+        <p>NOVA CAFE</p>
+
+        <h1>
+            OUR MENU
+        </h1>
+
+        <span>
+            COFFEE · SHAKES · SWEETS
+        </span>
+
+    </div>
+    <div class="menu-category">
+
+    <h2>COFFEE</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <div>
+                <h3>Iced Latte</h3>
+                <p>لاته خنک و خامه‌ای</p>
+            </div>
+            <span>120t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Iced Mocha</h3>
+                <p>موکا خنک با طعم شکلات</p>
+            </div>
+            <span>130t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Iced Americano</h3>
+                <p>آمریکانو خنک و تازه</p>
+            </div>
+            <span>100t</span>
+        </div>
+        <div class="menu-category">
+
+    <h2>COLD BAR</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <div>
+                <h3>Natural Melon Juice</h3>
+                <p>آب طالبی طبیعی</p>
+            </div>
+            <span>100t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Carrot Juice</h3>
+                <p>آب هویج تازه</p>
+            </div>
+            <span>110t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Lemonade</h3>
+                <p>لیموناد تازه و خنک</p>
+            </div>
+            <span>210t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Mojito</h3>
+                <p>موهیتو خنک و تازه</p>
+            </div>
+            <span>130t</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="menu-category">
+
+    <h2>SHAKE</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <div>
+                <h3>Chocolate Shake</h3>
+                <p>شیک شکلاتی غلیظ</p>
+            </div>
+            <span>250t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Pistachio Shake</h3>
+                <p>شیک پسته‌ای</p>
+            </div>
+            <span>300t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Vanilla Shake</h3>
+                <p>شیک وانیلی</p>
+            </div>
+            <span>200t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Lotus Shake</h3>
+                <p>شیک لوتوس</p>
+            </div>
+            <span>300t</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="menu-category">
+
+    <h2>ICE PACK</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <div>
+                <h3>Chocolate</h3>
+                <p>بستنی شکلاتی</p>
+            </div>
+            <span>100t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Strawberry</h3>
+                <p>بستنی توت فرنگی</p>
+            </div>
+            <span>100t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Mango</h3>
+                <p>بستنی انبه</p>
+            </div>
+            <span>110t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Vanilla</h3>
+                <p>بستنی وانیلی</p>
+            </div>
+            <span>100t</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="menu-category">
+
+    <h2>CAKE & SWEETS</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <div>
+                <h3>Cake of the Day</h3>
+                <p>کیک تازه روز</p>
+            </div>
+            <span>200t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Croissant</h3>
+                <p>کروسان تازه و کره‌ای</p>
+            </div>
+            <span>450t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Cookies</h3>
+                <p>کوکی تازه</p>
+            </div>
+            <span>90t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Chocolate</h3>
+                <p>شکلات</p>
+            </div>
+            <span>80t</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="menu-category">
+
+    <h2>ICE CREAM</h2>
+
+    <div class="menu-list">
+
+        <div class="menu-item">
+            <div>
+                <h3>Single Scoop</h3>
+                <p>یک اسکوپ بستنی</p>
+            </div>
+            <span>90t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Double Scoop</h3>
+                <p>دو اسکوپ بستنی</p>
+            </div>
+            <span>150t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Ice Cream Cake</h3>
+                <p>کیک بستنی</p>
+            </div>
+            <span>180t</span>
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <h3>Fruit Ice Cream</h3>
+                <p>بستنی میوه‌ای</p>
+            </div>
+            <span>120t</span>
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+</div>
+
+</section>
+</body>
+
+</html>

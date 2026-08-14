@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA | طراحی سایت</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5f1;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+</style>
+<link rel="stylesheet" href="menu.css">
+<style>
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 280px;
+    height: 450px;
+    right: -120px;
+    top: 120px;
+    background: rgba(38, 56, 44, 0.06);
+    border-radius: 100% 0 100% 0;
+    transform: rotate(25deg);
+    filter: blur(12px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 220px;
+    height: 360px;
+    left: -100px;
+    bottom: 100px;
+    background: rgba(160, 141, 109, 0.07);
+    border-radius: 0 100% 0 100%;
+    transform: rotate(-25deg);
+    filter: blur(12px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+header,
+main,
+section,
+footer {
+    position: relative;
+    z-index: 1;
+}
+</style>
+</head>
+
+<body>
+    <header class="header">
+
+    <div class="logo">
+        NOVA CAFE
+    </div>
+
+    <nav>
+   <a href="#home">HOME</a>
+   <a href="menu.html">MENU</a>
+    <a href="#about">ABOUT</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#footer">CONTACT</a>
+</nav>
+
+<a href="menu.html" class="menu-btn">
+    VIEW MENU
+</a>
+
+</header>
+<section id="home" class="hero">
+<div class="hero-text">
+
+    <p class="small-title">
+    EST. 2026 • NOOR, MAZANDARAN
+    </p>
+
+    <h1>
+        GOOD COFFEE
+        <br>
+        GOOD MOMENTS
+    </h1>
+
+    <p class="description">
+        A place for slow mornings, rich coffee
+        and unforgettable moments
+    </p>
+
+    <a href="#menu" class="hero-btn">
+        EXPLORE MENU
+    </a>
+
+</div>
+    <div class="hero-image">
+
+    <div class="cafe-title">
+
+        <span>NOVA</span>
+
+        <strong>CAFE</strong>
+
+        <div class="title-line"></div>
+
+        <p>COFFEE • MOMENTS • TASTE</p>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+<section id="menu" class="featured">
+
+    <div class="section-heading">
+
+        <p>OUR FAVORITES</p>
+
+        <h2>
+            انتخاب‌های محبوب NOVA
+        </h2>
+
+        <span>
+            A little taste of what we love.
+        </span>
+
+    </div>
+
+
+    <div class="menu-cards">
+
+        <div class="menu-card">
+            <img src="latte.png" class="menu-image">
+
+            <div class="card-number">
+                01
+            </div>
+
+            <h3>
+                Iced Latte
+            </h3>
+
+            <p>
+                لاته خنک و خامه‌ای، مناسب یک بعدازظهر آرام.
+            </p>
+
+            <span class="price">
+                120t
+            </span>
+
+        </div>
+
+
+        <div class="menu-card">
+            <img src="pistachio.png" class="menu-image">
+            
+
+            <div class="card-number">
+                02
+            </div>
+
+            <h3>
+                Pistachio Shake
+            </h3>
+
+            <p>
+                شیک پسته‌ای خوش‌طعم با بافتی نرم و دلچسب.
+            </p>
+
+            <span class="price">
+                300t
+            </span>
+
+        </div>
+
+
+        <div class="menu-card">
+            <img src="cake.png" class="menu-image">
+
+            <div class="card-number">
+                03
+            </div>
+
+            <h3>
+                Chocolate Cake
+            </h3>
+
+            <p>
+                کیک شکلاتی تازه برای کامل کردن لحظه‌های شیرین.
+            </p>
+
+            <span class="price">
+                250t
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="about" class="about">
+
+    <div class="about-title">
+
+        <p>ABOUT NOVA</p>
+
+       <h2>
+    A PLACE TO<br>
+    SLOW DOWN
+</h2>
+<section id="gallery" class="gallery">
+
+    <div class="gallery-heading">
+
+        <p>OUR SPACE</p>
+
+        <h2>
+            Moments at NOVA
+        </h2>
+
+        <span>
+            A glimpse of our little world
+        </span>
+
+    </div>
+
+<div class="gallery-grid">
+
+    <div class="gallery-item">
+        <img src="gallery1.jpg" alt="NOVA Cafe">
+    </div>
+
+    <div class="gallery-item">
+        <img src="gallery2.jpg" alt="NOVA Cafe">
+    </div>
+
+    <div class="gallery-item">
+        <img src="gallery3.jpg" alt="NOVA Cafe">
+    </div>
+
+    <div class="gallery-item">
+        <img src="gallery4.jpg" alt="NOVA Cafe">
+    </div>
+
+</div>
+<footer id="footer" class="footer">
+
+    <div class="footer-logo">
+        NOVA CAFE
+    </div>
+
+    <div class="footer-location">
+        NOOR · MAZANDARAN
+    </div>
+
+    <div class="footer-tagline">
+        COFFEE · MOMENTS · TASTE
+    </div>
+
+    <div class="footer-hours">
+        OPEN EVERY DAY
+        <strong>09:00 — 23:00</strong>
+    </div>
+
+</footer>
+</section>
+
+    </div>
+
+
+    <div class="about-text">
+
+        <p>
+            NOVA جایی برای مکث کردن، نفس کشیدن
+            و لذت بردن از لحظه‌های ساده است.
+        </p>
+
+        <p>
+            از اولین قهوه صبح تا دورهمی‌های شبانه،
+            اینجا همه چیز برای یک تجربه آرام و متفاوت ساخته شده.
+        </p>
+
+        <span>
+            NOOR • MAZANDARAN • EST. 2026
+        </span>
+
+    </div>
+
+</section>
+
+<style>
+
+.hero {
+    min-height: 600px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: #f7f3eb;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.small-title {
+    color: #71866f;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.4;
+    color: #26382c;
+    margin-bottom: 25px;
+}
+
+.description {
+    max-width: 500px;
+    color: #666;
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #26382c;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.hero-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cafe-title {
+    width: 100%;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.cafe-title span {
+    display: block;
+    font-size: 75px;
+    letter-spacing: 12px;
+    color: #26382c;
+}
+
+.cafe-title strong {
+    display: block;
+    font-size: 105px;
+    letter-spacing: 8px;
+    color: #b39a72;
+    line-height: 0.9;
+}
+
+.title-line {
+    width: 90px;
+    height: 2px;
+    background: #26382c;
+    margin: 35px auto 20px;
+}
+
+.cafe-title p {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #777;
+}
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .coffee-circle {
+        width: 280px;
+        height: 280px;
+        font-size: 80px;
+    }
+
+.featured {
+    padding: 100px 7%;
+    background: #eee8dc;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #7b806d;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    color: #26382c;
+    margin-bottom: 12px;
+}
+
+.section-heading span {
+    font-size: 13px;
+    color: #777;
+}
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    position: relative;
+    background: #f8f5ee;
+    padding: 40px 30px;
+    min-height: 250px;
+    border: 1px solid #ded6c8;
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.card-number {
+    font-size: 12px;
+    color: #a08d6d;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.menu-card h3 {
+    font-size: 24px;
+    color: #26382c;
+    margin-bottom: 18px;
+}
+
+.menu-card p {
+    font-size: 13px;
+    line-height: 2;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.price {
+    font-size: 13px;
+    color: #26382c;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+
+    .featured {
+        padding: 70px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .menu-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+<style>
+
+.header {
+    width: 100%;
+    height: 82px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f3eb;
+    border-bottom: 1px solid #ded7ca;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #26382c;
+}
+
+.header nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header nav a {
+    font-size: 14px;
+    color: #3d403b;
+}
+
+.header nav a:hover {
+    color: #71866f;
+}
+
+.menu-btn {
+    background: #26382c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        padding: 10px 15px;
+    }
+
+}
+
+</style>
+<button id="backTop" class="back-top">
+    ↑
+</button>
+
+</body>
+
+</html>
