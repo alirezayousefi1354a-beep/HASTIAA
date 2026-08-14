@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <title>گردنبند مینیمال ترند | HASTIA</title>
+
+    <style>
+        body {
+            background-color: #f8f5f0;
+            color: #2f2f2f;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .product {
+            background-color: white;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .product img {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #addButton {
+            background-color: #2f2f2f;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product">
+
+        <img src="product2.png" alt="گردنبند مینیمال ترند">
+
+        <h1>گردنبند مینیمال ترند</h1>
+
+        <p>
+            گردنبند ظریف و مینیمال HASTIA
+        </p>
+
+        <p class="price">
+            ۵۰۰,۰۰۰ تومان
+        </p>
+
+        <button id="addButton">
+            افزودن به سبد خرید
+        </button>
+
+        <br><br>
+
+        <a href="index.html">
+            بازگشت به صفحه اصلی
+        </a>
+
+    </div>
+
+
+    <script>
+
+        document.getElementById("addButton").onclick = function () {
+
+            window.location.href =
+                "cart.html?name=%DA%AF%D8%B1%D8%AF%D9%86%D8%A8%D8%AF%20%D9%85%DB%8C%D9%86%DB%8C%D9%85%D8%A7%D9%84%20%D8%AA%D8%B1%D9%86%D8%AF&price=500000";
+
+        };
+
+    </script>
+
+</body>
+
+</html>

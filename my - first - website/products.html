@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>محصولات HASTIA</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            background: #f8f5f0;
+            color: #2f2f2f;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 35px;
+            letter-spacing: 3px;
+            margin: 25px 0 40px;
+        }
+
+        .top {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .top a {
+            color: #2f2f2f;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .products {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        .product-card h2 {
+            font-size: 19px;
+            margin: 15px 0 8px;
+        }
+
+        .price {
+            color: #666;
+            margin: 10px 0 18px;
+        }
+
+        button {
+            background: #2f2f2f;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .product-card img {
+                height: 180px;
+            }
+
+            .product-card h2 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>محصولات HASTIA</h1>
+
+    <div class="top">
+        <a href="index.html">خانه</a>
+        <a href="cart.html">🛒 سبد خرید</a>
+    </div>
+
+    <div class="products">
+
+        <div class="product-card">
+            <img src="product1.png" alt="محصول ۱">
+            <h2>محصول ۱</h2>
+            <div class="price">۳۵۰,۰۰۰ تومان</div>
+            <a href="product1.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product2.png" alt="محصول ۲">
+            <h2>محصول ۲</h2>
+            <div class="price">۳۵۰,۰۰۰ تومان</div>
+            <a href="product2.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product3.png" alt="گوشواره ستاره‌ای مینیمال">
+            <h2>گوشواره ستاره‌ای مینیمال</h2>
+            <div class="price">۳۵۰,۰۰۰ تومان</div>
+            <a href="product3.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product4.png" alt="گردنبند مرواریدی">
+            <h2>گردنبند مرواریدی</h2>
+            <div class="price">۴۰۰,۰۰۰ تومان</div>
+            <a href="product4.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product5.png" alt="ست گردنبند ساحلی">
+            <h2>ست گردنبند ساحلی</h2>
+            <div class="price">۸۰۰,۰۰۰ تومان</div>
+            <a href="product5.html"><button>مشاهده محصول</button></a>
+        </div>
+        <div class="product-card">
+            <img src="product6.png" alt="ست گردنبند و دستبند ساحلی">
+            <h2>ست گردنبند و دستبند ساحلی</h2>
+            <div class="price">۸۵۰,۰۰۰ تومان</div>
+            <a href="product6.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product7.png" alt="گردنبند قلب مینیمال">
+            <h2>گردنبند قلب مینیمال</h2>
+            <div class="price">۴۰۰,۰۰۰ تومان</div>
+            <a href="product7.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product8.png" alt="ست مروارید طلایی">
+            <h2>ست مروارید طلایی</h2>
+            <div class="price">۱,۳۰۰,۰۰۰ تومان</div>
+            <a href="product8.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product9.png" alt="ست بنگل استیل">
+            <h2>ست بنگل استیل</h2>
+            <div class="price">۷۰۰,۰۰۰ تومان</div>
+            <a href="product9.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="produc10.png" alt="گردنبند ساحلی">
+            <h2>گردنبند ساحلی</h2>
+            <div class="price">۴۰۰,۰۰۰ تومان</div>
+            <a href="product10.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product11.png" alt="گوشواره و انگشتر مروارید طلایی">
+            <h2>گوشواره و انگشتر مروارید طلایی</h2>
+            <div class="price">۷۰۰,۰۰۰ تومان</div>
+            <a href="product11.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product12.png" alt="زنجیر استیل الماسی">
+            <h2>زنجیر استیل الماسی</h2>
+            <div class="price">۴۹۰,۰۰۰ تومان</div>
+            <a href="product12.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product13.png" alt="انگشتر و گوشواره مرواریدی استیل">
+            <h2>انگشتر و گوشواره مرواریدی استیل</h2>
+            <div class="price">۷۰۰,۰۰۰ تومان</div>
+            <a href="product13.html"><button>مشاهده محصول</button></a>
+        </div>
+
+        <div class="product-card">
+            <img src="product14.png" alt="بنگل الماسی استیل">
+            <h2>بنگل الماسی استیل</h2>
+            <div class="price">۳۵۰,۰۰۰ تومان</div>
+            <a href="product14.html"><button>مشاهده محصول</button></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
